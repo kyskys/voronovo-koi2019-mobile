@@ -4,11 +4,7 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupWithNavController
 import by.schools.voronovo.koiapp.R
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,13 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         applyUiFlags()
-        setupNavigationUi()
-
-        setSupportActionBar(toolbar)
-        supportActionBar?.apply {
-            toolbar.visibility = View.VISIBLE
-
-        }
     }
 
     private fun applyUiFlags() {
@@ -31,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             flags =
-                flags or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                flags or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -40,11 +29,5 @@ class MainActivity : AppCompatActivity() {
         }
 
         window.decorView.systemUiVisibility = flags
-    }
-
-    private fun setupNavigationUi() {
-        val navController = findNavController(R.id.navigationHost)
-        val config = AppBarConfiguration(navController.graph)
-        toolbar.setupWithNavController(navController, config)
     }
 }
