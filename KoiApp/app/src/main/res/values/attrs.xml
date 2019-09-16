@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="questionInfoStyle" />
+
+    <declare-styleable name="QuestionInfoView">
+        <attr name="questionCardStyle" format="reference" />
+        <attr name="questionTextStyle" format="reference" />
+        <attr name="questionImageStyle" format="reference" />
+        <attr name="questionPrevImageStyle" format="reference" />
+        <attr name="questionPrevAllImagesTextStyle" format="reference" />
+        <attr name="questionImageMode" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multiple" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

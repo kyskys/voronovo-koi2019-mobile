@@ -9,6 +9,37 @@
     </style>
 
     <style name="AppTheme" parent="BaseTheme">
+        <item name="questionInfoStyle">@style/AppTheme.QuestionStyle.Info</item>
+    </style>
+
+    <style name="AppTheme.QuestionStyle"/>
+
+    <style name="AppTheme.QuestionStyle.Info">
+        <item name="questionCardStyle">@style/AppTheme.QuestionStyle.Info.CardStyle</item>
+        <item name="questionTextStyle">@style/AppTheme.QuestionStyle.Info.QuestionTextStyle</item>
+        <item name="questionPrevAllImagesTextStyle">@style/AppTheme.QuestionStyle.Info.AllImagesTextStyle</item>
+    </style>
+
+    <style name="AppTheme.QuestionStyle.Info.CardStyle">
+        <item name="contentPadding">8dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardMaxElevation">4dp</item>
+    </style>
+
+    <style name="AppTheme.QuestionStyle.Info.QuestionTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">120dp</item>
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="AppTheme.QuestionStyle.Info.AllImagesTextStyle">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
     </style>
 
 </resources>
