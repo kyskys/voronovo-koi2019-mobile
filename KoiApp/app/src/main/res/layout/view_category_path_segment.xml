@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:ellipsize="end"
+    android:maxEms="15"
+    app:chipIconEnabled="false"
+    app:chipStrokeColor="?colorAccent"
+    app:closeIconEnabled="false"
+    app:chipSurfaceColor="?android:background"
+    tools:text="Category">
+
+</com.google.android.material.chip.Chip>
